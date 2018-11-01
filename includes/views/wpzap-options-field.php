@@ -1,0 +1,1 @@
+<input type="text" name="wpzap_options[phone_number]" class="regular-text" value="<?php echo isset($wpzap_options['phone_number']) ? $wpzap_options['phone_number'] : false; ?>" />

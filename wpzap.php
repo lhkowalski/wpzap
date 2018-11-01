@@ -18,6 +18,7 @@ if ( !function_exists( 'add_action' ) ) {
 define( 'WPZAP_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 //require(WPZAP_PLUGIN_DIR . '/includes/functions.php');
 require(WPZAP_PLUGIN_DIR . '/includes/class-wpzap-plugin.php');
+require(WPZAP_PLUGIN_DIR . '/includes/class-wpzap-optionpage.php');
 
-
+// RUN!
 $WPZap_Plugin = WPZap_Plugin::getInstance();

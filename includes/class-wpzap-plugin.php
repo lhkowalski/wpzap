@@ -3,6 +3,7 @@
 class WPZap_Plugin
 {
 	static $instance = null;
+	protected $optionPageController = null;
 
 	public static function getInstance()
 	{
@@ -14,12 +15,21 @@ class WPZap_Plugin
 
 	public function __construct()
 	{
+		$this->optionPage = new WPZap_OptionPage();
+
 		// hang in hooks
-		add_shortcode('wpzap', array($this, 'doShortcode')); 
+		add_shortcode('wpzap', array($this, 'doShortcode'));
+
+		$this->optionPage->init();
 	}
 
 	public function doShortcode()
 	{
-		return "(62) 98156-9612 :-)";
+		$wpzap_options = get_option('wpzap_options');
+
+		if( ! $wpzap_options)
+			return '';
+
+		return esc_html($wpzap_options['phone_number']);
 	}
 }
