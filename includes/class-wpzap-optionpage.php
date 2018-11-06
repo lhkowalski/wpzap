@@ -1,11 +1,7 @@
 <?php
 
-class WPZap_OptionPage
+class WPZap_OptionPage extends WPZap_General
 {
-	public function __construct()
-	{
-	}
-
 	public function init()
 	{
 		add_action('admin_init', array($this, 'initSettings'));
@@ -14,33 +10,13 @@ class WPZap_OptionPage
 
 	public function initSettings()
 	{
-		register_setting('wpzap', 'wpzap_options');
+		register_setting('wpzap', WPZAP_PLUGIN_OPTIONS);
 
-		add_settings_section(
-			'wpzap-options-section',
-			'Configurar Número de Telefone',
-			array($this, 'headerOptionsPage'),
-			'wpzap'
-		);
- 
-		add_settings_field(
-			'wpzap_phone_number',
-			'Número do WhatsApp',
-			array($this, 'fieldHTML'),
-			'wpzap',
-			'wpzap-options-section'
-		);
-	}
+		$optionsGeneral = new WPZap_Options_General();
+		$optionsGeneral->init();
 
-	public function headerOptionsPage()
-	{
-		echo "<p>Configure o número que você usa no WhatsApp.</p>";
-	}
-
-	public function fieldHTML($args)
-	{
-		$wpzap_options = get_option('wpzap_options');
-		include(WPZAP_PLUGIN_DIR . "/includes/views/wpzap-options-field.php");
+		$optionsFloatingButton = new WPZap_Options_FloatingButton();
+		$optionsFloatingButton->init();
 	}
 
 	public function initOptionsPage()

@@ -1,0 +1,47 @@
+a.wpzap-btn-inline {
+	border-radius: 5px;
+	padding: 10px 17px;
+	font-size: 13px;
+	line-height: 19px;
+	height: 19px;
+	box-sizing: content-box;
+	letter-spacing: 0.02em;
+	font-weight: 600;
+	white-space: nowrap;
+	display: inline-block;
+	background-color: #01E675;
+   color: #fff !important;
+}
+
+div.wpzap-floating-button {
+	display: block;
+	position: fixed;
+}
+
+div.wpzap-floating-button-bottom-right {
+	bottom: 15px;
+	right: 15px;
+}
+
+div.wpzap-floating-button-top-right {
+	top: 15px;
+	right: 15px;
+}
+
+div.wpzap-floating-button-bottom-left {
+	bottom: 15px;
+	left: 15px;
+}
+
+div.wpzap-floating-button-top-left {
+	top: 15px;
+	left: 15px;		
+}
+
+div.wpzap-floating-button a {
+	outline: none;
+}
+
+div.wpzap-floating-button:hover {
+	opacity: 0.8;
+}

@@ -3,7 +3,7 @@
 class WPZap_Plugin
 {
 	static $instance = null;
-	protected $optionPageController = null;
+	protected $optionPage, $shortcode;
 
 	public static function getInstance()
 	{
@@ -16,20 +16,30 @@ class WPZap_Plugin
 	public function __construct()
 	{
 		$this->optionPage = new WPZap_OptionPage();
-
-		// hang in hooks
-		add_shortcode('wpzap', array($this, 'doShortcode'));
+		$this->pageMetabox = new WPZap_Page_MetaBox();
+		$this->shortcode = new WPZap_Shortcode();
+		$this->floatingButton = new WPZap_FloatingButton();
+		$this->redirect = new WPZap_Redirect();
 
 		$this->optionPage->init();
+		$this->pageMetabox->init();
+		$this->shortcode->init();
+		$this->floatingButton->init();
+		$this->redirect->init();
+
+		$this->init();
 	}
 
-	public function doShortcode()
+	public function init()
 	{
-		$wpzap_options = get_option('wpzap_options');
+		add_action('wp_enqueue_scripts', array($this, 'enqueueScripts'));
+	}
 
-		if( ! $wpzap_options)
-			return '';
+	public function enqueueScripts()
+	{
+		wp_register_style('wpzap', plugins_url('public/css/wpzap.css', dirname(__FILE__)));
+   	wp_enqueue_style('wpzap');
 
-		return esc_html($wpzap_options['phone_number']);
+      // wp_enqueue_script( 'namespaceformyscript', 'http://locationofscript.com/myscript.js', array( 'jquery' ) );
 	}
 }

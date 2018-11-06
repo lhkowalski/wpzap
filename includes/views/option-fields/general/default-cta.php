@@ -1,0 +1,2 @@
+<input type="text" name="wpzap_options[default_cta]" class="regular-text" value="<?php echo isset($options['default_cta']) ? $options['default_cta'] : false; ?>" />
+<p>Chamada padrão do botão do WhatsApp. Se você não informar o texto no <em>shorcode</em>, a chamada padrão será utilizada.</p>
