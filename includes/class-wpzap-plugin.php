@@ -18,12 +18,14 @@ class WPZap_Plugin
 		$this->optionPage = new WPZap_OptionPage();
 		$this->pageMetabox = new WPZap_Page_MetaBox();
 		$this->shortcode = new WPZap_Shortcode();
+		$this->widget = new WPZap_Widget();
 		$this->floatingButton = new WPZap_FloatingButton();
 		$this->redirect = new WPZap_Redirect();
 
 		$this->optionPage->init();
 		$this->pageMetabox->init();
 		$this->shortcode->init();
+		$this->widget->init();
 		$this->floatingButton->init();
 		$this->redirect->init();
 
