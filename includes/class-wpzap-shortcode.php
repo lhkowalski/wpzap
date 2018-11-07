@@ -12,5 +12,8 @@ class WPZap_Shortcode
 
 		$link = new WPZap_Shortcode_Link();
 		$link->init();
+
+		$formulario = new WPZap_Shortcode_Formulario();
+		$formulario->init();
 	}
 }

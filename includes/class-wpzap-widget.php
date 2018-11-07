@@ -9,6 +9,6 @@ class WPZap_Widget
 	{
 		$numero = new WPZap_Widget_Numero();
 		$botao = new WPZap_Widget_Botao();
-		// $formulario = new WPZap_Widget_Formulario();
+		$formulario = new WPZap_Widget_Formulario();
 	}
 }

@@ -17,4 +17,9 @@ class WPZap_Util
 
 		return self::$whatsappBaseLink . $phoneNumberClean;
 	}
+
+	public static function getDefaultCTA()
+	{
+		return 'WhatsApp';
+	} 
 }
