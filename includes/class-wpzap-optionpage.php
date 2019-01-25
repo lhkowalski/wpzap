@@ -24,7 +24,7 @@ class WPZap_OptionPage extends WPZap_General
 		// register the options page
 		add_options_page(
         'Configuração do WP Zap', // title
-        'WP Zap', // menu
+        'WPZap', // menu
         'manage_options', // capability
         'wpzap', // 
         array($this, 'showOptionsPage')
