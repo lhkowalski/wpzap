@@ -23,16 +23,19 @@ class WPZap_Widget_Formulario extends WP_Widget
 
 	public function widget($args, $instance)
 	{
-      // If the button text wasn't defined, get the option or the default
-      if(empty($instance['button']))
-      {
-         $options = get_option(WPZAP_PLUGIN_OPTIONS);
+      $formShortcode = new WPZap_Shortcode_Formulario();
+      $shortcodeAttr = array();
 
-         if(isset($options['default_cta']) && ! empty($options['default_cta']))
-            $instance['button'] = $options['default_cta'];
-         else
-            $instance['button'] = WPZap_Util::getDefaultCTA();
-      }
+      if( ! empty($instance['button']))
+         $shortcodeAttr['texto'] = $instance['button'];
+
+      // textarea default content
+      $content = false;
+      if( ! empty($instance['message']))
+         $content = $instance['message'];
+
+      // build the html content using the shortcode function and template
+      $form = $formShortcode->doShortcode($shortcodeAttr, $content);
 
 		include(WPZAP_PLUGIN_DIR . "/includes/views/widget/formulario-widget.php");
    }

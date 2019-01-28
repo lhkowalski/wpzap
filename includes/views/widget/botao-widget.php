@@ -14,7 +14,7 @@ if ( ! empty($instance['text']))
 	echo '<p>' . $instance['text'] . '</p>';
 }
 
-echo '<p>' . $button . '</p>';
+echo $button;
 echo '</div>';
 
 echo $args['after_widget'];

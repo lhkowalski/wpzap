@@ -34,6 +34,14 @@ class WPZap_Options_General extends WPZap_General
 			'wpzap',
 			'wpzap-options-section-general'
 		);
+
+		add_settings_field(
+			'wpzap_custom_style',
+			'Usar Estilos do WPZap',
+			array($this, 'customStyleField'),
+			'wpzap',
+			'wpzap-options-section-general'
+		);
 	}
 
 	public function headerSection()
@@ -52,5 +60,12 @@ class WPZap_Options_General extends WPZap_General
 		$this->loadOptions();
 		$options = $this->_options;
 		include(WPZAP_PLUGIN_DIR . "/includes/views/option-fields/general/default-cta.php");
+	}
+
+	public function customStyleField($args)
+	{
+		$this->loadOptions();
+		$options = $this->_options;
+		include(WPZAP_PLUGIN_DIR . "/includes/views/option-fields/general/custom-style.php");
 	}
 }

@@ -1,0 +1,58 @@
+div.wpzap-form-wrap {
+	padding: 10px;
+	background-color: #f9f9f9;
+	border-radius: 5px;
+}
+
+/* textarea style */
+textarea.wpzap-form-textarea {
+	display: inline;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* button style */
+div.wpzap-form-wrap p {
+	text-align: center;
+}
+
+div.wpzap-form-wrap button.wpzap-btn-inline,
+div.wpzap-button-wrap button.wpzap-btn-inline
+ {
+	padding: .375rem .75rem;
+	display: inline-block;
+   font-weight: 400;
+   color: #212529;
+   text-align: center;
+   vertical-align: middle;
+   cursor: pointer;
+   background-image: none;
+   transition: color .15s ease-in-out, 
+   	background-color .15s ease-in-out, 
+   	border-color .15s ease-in-out, 
+   	box-shadow .15s ease-in-out;
+}
+
+div.wpzap-form-wrap button.wpzap-btn-inline-green,
+div.wpzap-button-wrap button.wpzap-btn-inline-green {
+	color: #fff;
+   background-color: #28a745;
+   border-color: #28a745;
+}
+
+div.wpzap-form-wrap button.wpzap-btn-inline-green:hover,
+div.wpzap-button-wrap button.wpzap-btn-inline-green:hover {
+   background-color: #218838;
+   border-color: #1e7e34;
+}
+
+div.wpzap-form-wrap button.wpzap-btn-inline-green:active, 
+div.wpzap-form-wrap button.wpzap-btn-inline-green:focus,
+div.wpzap-button-wrap button.wpzap-btn-inline-green:active,
+div.wpzap-button-wrap button.wpzap-btn-inline-green:focus {
+   background-color: #1e7e34;
+   border-color: #1c7430;
+   box-shadow:0 0 0 .2rem rgba(40,167,69,.5);
+}

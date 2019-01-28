@@ -42,6 +42,14 @@ class WPZap_Plugin
 		wp_register_style('wpzap', plugins_url('public/css/wpzap.css', dirname(__FILE__)));
    	wp_enqueue_style('wpzap');
 
+   	// load WPZap theme, based on the value of the flag
+   	$options = get_option(WPZAP_PLUGIN_OPTIONS);
+   	if(isset($options['custom_style']) && $options['custom_style'] == 'S')
+   	{
+	   	wp_register_style('wpzap-theme', plugins_url('public/css/wpzap-theme.css', dirname(__FILE__)));
+	   	wp_enqueue_style('wpzap-theme');
+   	}
+
       // wp_enqueue_script( 'namespaceformyscript', 'http://locationofscript.com/myscript.js', array( 'jquery' ) );
 	}
 }
