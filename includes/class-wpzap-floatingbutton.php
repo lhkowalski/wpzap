@@ -11,6 +11,30 @@ class WPZap_FloatingButton extends WPZap_General
 			'image' => 'wapp-icon-2.png',
 			'label' => 'Ícone Redondo Preto',
 		),
+		'round-3' => array(
+			'image' => 'wapp-icon-3.png',
+			'label' => 'Ícone Redondo Transparente',
+		),
+		'square-1' => array(
+			'image' => 'wapp-icon-5.png',
+			'label' => 'Ícone Quadrado Verde',
+		),
+		'square-2' => array(
+			'image' => 'wapp-icon-6.png',
+			'label' => 'Ícone Quadrado Preto',
+		),
+		'square-3' => array(
+			'image' => 'wapp-icon-7.png',
+			'label' => 'Ícone Quadrado Transparente',
+		),
+		'hexagon-1' => array(
+			'image' => 'wapp-icon-9.png',
+			'label' => 'Ícone Hexagonal Verde',
+		),
+		'hexagon-2' => array(
+			'image' => 'wapp-icon-10.png',
+			'label' => 'Ícone Hexagonal Preto',
+		),
 	);
 
 	static $positions = array(
