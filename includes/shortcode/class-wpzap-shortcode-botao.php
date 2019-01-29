@@ -34,6 +34,9 @@ class WPZap_Shortcode_Botao extends WPZap_General
 		// full link to chat
 		$hrefLink = WPZap_Util::getLinkFromOptions($this->_options);
 
+		// check if is custom style
+		$isCustomStyle = (isset($this->_options['custom_style']) && $this->_options['custom_style'] == 'S');
+
 		// html of the button
 	   // generate HTML
 		ob_start();

@@ -13,46 +13,66 @@ textarea.wpzap-form-textarea {
 	box-sizing: border-box;
 }
 
-/* button style */
 div.wpzap-form-wrap p {
-	text-align: center;
+   text-align: center;
 }
 
-div.wpzap-form-wrap button.wpzap-btn-inline,
-div.wpzap-button-wrap button.wpzap-btn-inline
+div.wpzap-form-wrap .wpzap-btn-inline,
+.wpzap-button-wrap .wpzap-btn-inline,
+.widget-area .widget .wpzap-button-wrap .wpzap-btn-inline
  {
-	padding: .375rem .75rem;
-	display: inline-block;
+   /* padding: .375rem .75rem; */
+   padding: .375em .75em;
+   display: inline-block;
    font-weight: 400;
-   color: #212529;
    text-align: center;
    vertical-align: middle;
    cursor: pointer;
    background-image: none;
+   border-radius: .25rem;
+   border: 1px solid transparent;
+   text-transform: none;
+   text-decoration: none;
+
    transition: color .15s ease-in-out, 
-   	background-color .15s ease-in-out, 
-   	border-color .15s ease-in-out, 
-   	box-shadow .15s ease-in-out;
+      background-color .15s ease-in-out, 
+      border-color .15s ease-in-out, 
+      box-shadow .15s ease-in-out;
 }
 
-div.wpzap-form-wrap button.wpzap-btn-inline-green,
-div.wpzap-button-wrap button.wpzap-btn-inline-green {
-	color: #fff;
+div.wpzap-form-wrap .wpzap-btn-inline-green,
+.wpzap-button-wrap .wpzap-btn-inline-green,
+.widget-area .widget .wpzap-button-wrap .wpzap-btn-inline-green {
+   color: #fff;
    background-color: #28a745;
    border-color: #28a745;
 }
 
-div.wpzap-form-wrap button.wpzap-btn-inline-green:hover,
-div.wpzap-button-wrap button.wpzap-btn-inline-green:hover {
+div.wpzap-form-wrap .wpzap-btn-inline-green:hover,
+.wpzap-button-wrap .wpzap-btn-inline-green:hover,
+.widget-area .widget .wpzap-button-wrap .wpzap-btn-inline-green:hover {
    background-color: #218838;
    border-color: #1e7e34;
+   color: #fff;
 }
 
-div.wpzap-form-wrap button.wpzap-btn-inline-green:active, 
-div.wpzap-form-wrap button.wpzap-btn-inline-green:focus,
-div.wpzap-button-wrap button.wpzap-btn-inline-green:active,
-div.wpzap-button-wrap button.wpzap-btn-inline-green:focus {
+div.wpzap-form-wrap .wpzap-btn-inline-green:active, 
+div.wpzap-form-wrap .wpzap-btn-inline-green:focus,
+.wpzap-button-wrap .wpzap-btn-inline-green:active,
+.wpzap-button-wrap .wpzap-btn-inline-green:focus,
+.widget-area .widget .wpzap-button-wrap .wpzap-btn-inline-green:active,
+.widget-area .widget .wpzap-button-wrap .wpzap-btn-inline-green:focus {
    background-color: #1e7e34;
    border-color: #1c7430;
    box-shadow:0 0 0 .2rem rgba(40,167,69,.5);
+   color: #fff;
+   outline: none;
+}
+
+div.wpzap-form-wrap .wpzap-btn-inline-green:visited,
+.wpzap-button-wrap .wpzap-btn-inline-green:visited,
+.widget-area .widget .wpzap-button-wrap .wpzap-btn-inline-green:visited {
+   background-color: #218838;
+   border-color: #1e7e34;
+   color: #fff;
 }
