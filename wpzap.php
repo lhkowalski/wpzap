@@ -1,9 +1,9 @@
 <?php
 
 /*
-Plugin Name: WP Zap
-Plugin URI: http://oato.com.br/wpzap
-Description: This plugins inserts a button to chat on WhatsApp
+Plugin Name: WPZap
+Plugin URI: http://wpzap.com.br/
+Description: Crie botões e formulários de contato para ajudar o seu visitante a te contatar pelo WhatsApp.
 Author: Luiz Kowalski
 Version: 0.1
 Author URI: http://lhkowalski.com/
