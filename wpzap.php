@@ -3,9 +3,9 @@
 /*
 Plugin Name: WPZap
 Plugin URI: http://wpzap.com.br/
-Description: Crie botões e formulários de contato para ajudar o seu visitante a te contatar pelo WhatsApp.
+Description: Crie botões e formulários de contato para ajudar o seu visitante a falar com você pelo WhatsApp.
 Author: Luiz Kowalski
-Version: 1.2
+Version: 1.2.1
 Author URI: http://lhkowalski.com/
 */
 
