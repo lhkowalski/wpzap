@@ -40,12 +40,3 @@ require(WPZAP_PLUGIN_DIR . '/includes/options/class-wpzap-options-general.php');
 
 // RUN!
 $WPZap_Plugin = WPZap_Plugin::getInstance();
-
-// include support to auto-update!
-require(WPZAP_PLUGIN_DIR.'/plugin-update-checker/plugin-update-checker.php');
-
-$WPZap_UpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'http://update.wpzap.com.br/release.json',
-	__FILE__,
-	'wpzap'
-);
