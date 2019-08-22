@@ -66,28 +66,68 @@ Usando o WPZap para incluindo no seu site os elementos que tornam isso possível
 
 ### Botão Flutuante
 
+![Botão Flutuante WPZap](docs/images/botao-flutuante_rsz.jpg)
+
 Você pode mostrar um botão de conversa no canto de todas as suas páginas. Assim seu visitante vai estar a 1 clique de uma conversa com você. Você pode escolher o estilo que mais se parece com o seu site e a posição que mais chame a atenção do seu visitante.
 
 ### Links
 
+![Link WPZap](docs/images/link_rsz.jpg)
+
 Você pode convidar seus clientes para uma conversa inserindo links direto no texto das páginas que descrevem os seus produtos, usando textos personalizados como "Solicite um Orçamento" ou "converse com um consultor agora mesmo".
+
+Exemplo:
+
+```
+[wpzap_link texto="Clique aqui para falar com um de nossos atendentes"]
+```
 
 ### Botões
 
+![Botão WPZap](docs/images/botao_rsz.jpg)
+
 As vezes você precisa chamar mais atenção para o convite que está fazendo. Para isso, você pode usar um botão que se destaque na página, com o texto que você achar conveniente.
+
+Exemplo:
+
+```
+[wpzap_botao texto="Falar com um consultor por WhatsApp"]
+```
 
 ### Formulários de Contato
 
+![Formulário de Contato WPZap](docs/images/formulario_rsz.jpg)
+
 Se você quiser ir além dos botões, também pode incluir uma caixa de texto para que o visitante digite uma mensagem antes de iniciar a conversa. Nesse caso, tanto o texto do botão quanto o a mensagem sugerida na caixa podem ser personalizados.
 
+```
+[wpzap_formulario texto="o texto do botão do formulário"]A mensagem padrão mostrada no formulário[/wpzap_formulario]
+```
+
 ### Links Mágicos
+
+![Link Mágico WPZap](docs/images/link-magico-ig_rsz.jpg)
 
 Você pode criar um endereço que vai levar o seu visitante direto para uma conversa no WhatsApp, e usar esse link na biografia do Instagram da sua empresa ou em qualquer divulgação que fizer.
 
 ### Opções Avançadas
 
+![Painel de Widgets WPZap](docs/images/widget-painel_rsz.jpg)
+
+![Widget WPZap](docs/images/widget-sidebar_rsz.jpg)
+
 Você pode incluir os botões e caixas de contato no conteúdo das páginas, na barra lateral, no rodapé ou em qualquer área do seu site que aceite os componentes do WordPress.
 
 ### Configuração Simplificada
 
+![Config~uração WPZap](docs/images/configuracao_rsz.jpg)
+
 Todas as configurações do WPZap são feitas em uma única tela, da forma mais simples possível. Você configura o número de telefone apenas uma vez, e todos os botões que incluir no site vão utilizar o número configurado. Se o seu número mudar, o seu site inteiro muda de uma vez, com zero dor de cabeça.
+
+## Guia de Instalação
+
+Para baixar um guia com instruções de instalação e uso, [clique aqui](docs/guia-1.3.pdf).
+
+## Download
+
+Para baixar a versão atual, [clique aqui](dist/wpzap-latest.zip).
